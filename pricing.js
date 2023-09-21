@@ -26,7 +26,7 @@ Box.forEach(item => {
     
     const div = document.createElement("div");
     div.setAttribute("id", "mandakasayam");
-    div.style.height = "300px";
+    div.style.height = "250px";
     div.style.width = "200px";
     div.style.border = "1px solid black";
    
@@ -45,6 +45,7 @@ Box.forEach(item => {
 
     const btn = document.createElement("button");
     btn.textContent = item.select;
+    div.setAttribute("id", "pricing");
     // Add Bootstrap classes to the button
     btn.classList.add("btn", "btn-outline-primary");
     div.appendChild(btn);
@@ -56,6 +57,13 @@ Box.forEach(item => {
 
 //  Form closing function
 
+document.querySelector("#pricing"). addEventListener("click", function ()
+{
+    document.querySelector(".bg-modal").style.display = "flex"
+})
+
+
+
 document.getElementById("button"). addEventListener("click", function ()
 {
     document.querySelector(".bg-modal").style.display = "flex"
@@ -65,3 +73,19 @@ document.querySelector(".close").addEventListener("click", function()
 {
     document.querySelector(".bg-modal").style.display = "none"
 })
+document.querySelector("#shutdown").addEventListener("click", function()
+{
+    document.querySelector(".bg-modal").style.display = "none"
+})
+
+
+
+
+const rangeInput = document.getElementById('customRange1');
+const currentValueSpan = document.getElementById('currentValue');
+
+rangeInput.addEventListener('input', updateRangeValue);
+
+function updateRangeValue() {
+    currentValueSpan.textContent = rangeInput.value;
+}
