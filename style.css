@@ -118,6 +118,16 @@ font-weight: 300;
     
 }
 
+
+
+.form-button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-end ;
+    gap: 10px;
+}
+
 .close {
     position:absolute;
     top: 0;
@@ -125,4 +135,9 @@ font-weight: 300;
     font-size: 40px;
     transform: rotate(45deg);
     cursor: pointer;
+}
+
+.shutdown {
+    cursor: pointer;
+    margin-right: 5px;
 }

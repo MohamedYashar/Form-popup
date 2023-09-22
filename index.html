@@ -60,27 +60,38 @@
 
         <div class="modal-bin">
           <div class="close"> +</div>
+          <!-- forms.maakeetoo.com/formapi/768 -->
 
-          <div class="mb-4">
+           <form action="https://forms.maakeetoo.com/formapi/768" method="post">
 
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-          </div>
-          <div class="mb-4">
-            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
-          </div>
-          <div class="mb-4">
-            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Order comments">
-          </div>
+            <div class=" form-group mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
 
+            <div class=" form-group mb-3">
+              <input name="Email"id="email" type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            
+            <div class=" form-group mb-3">
+      
+              <textarea id="orderComents" name="message" class="form-control" rows="2" cols="50" placeholder="orderComments"> </textarea>
+            </div>
+            
+            <div class="form-button">
+            <!-- <button id="shutdown" class="btn btn-primary">close</button> -->
+            <button type="submit" value="submit" class="btn btn-primary">Submit</button>
 
+            </div>
+            
+          </form>
+          <br>
 
           <label for="customRange1" class="form-label">Select Number of Users</label>
           <input type="range" class="form-range" id="customRange1" min="10" max="30" step="10" value="10">
           <p id="rangeValue">Users: <span id="currentValue">10</span></p>
 
-          <div class="mb-3">
-          </div > <button  id="shutdown" type="button" class="btn btn-outline-primary"> Select</button>
-
+            
+          
         </div>
 
       </div>

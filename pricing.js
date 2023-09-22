@@ -89,3 +89,4 @@ rangeInput.addEventListener('input', updateRangeValue);
 function updateRangeValue() {
     currentValueSpan.textContent = rangeInput.value;
 }
+
