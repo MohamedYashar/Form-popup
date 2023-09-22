@@ -141,3 +141,9 @@ font-weight: 300;
     cursor: pointer;
     margin-right: 5px;
 }
+
+#sliderValues{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
